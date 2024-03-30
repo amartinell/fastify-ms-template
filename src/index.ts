@@ -4,7 +4,9 @@ import {fastifyRequestContext} from "@fastify/request-context";
 import {nanoid} from "nanoid";
 
 const main = async () => {
-  const app = fastify();
+  const app = fastify({
+    logger: true,
+  });
 
   // Import type schema validator
   app.register(import('@fastify/sensible'));
