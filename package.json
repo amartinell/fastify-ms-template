@@ -1,0 +1,30 @@
+{
+  "name": "fastify-ms-template",
+  "version": "0.0.1",
+  "description": "A miscroservice Fastify template",
+  "main": "index.js",
+  "repository": "https://github.com/amartinell/fastify-ms-template.git",
+  "author": "Andrea Martinelli <andrea.martinelli@translated.net>",
+  "license": "MIT",
+  "scripts": {
+    "eslint": "eslint --ignore-path .gitignore --fix",
+    "build": "tsc",
+    "serve": "node -r envk dist/index.js"
+  },
+  "dependencies": {
+    "@fastify/sensible": "^5.5.0",
+    "@fastify/type-provider-typebox": "^4.0.0",
+    "@sinclair/typebox": "^0.32.20",
+    "axios": "^1.6.8",
+    "envk": "^3.4.0",
+    "fastify": "^4.26.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.2",
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.3",
+    "typescript-eslint": "^7.4.0"
+  }
+}
